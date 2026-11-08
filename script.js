@@ -1,32 +1,80 @@
 
-// Loading screen
+// ========================================
+// 1. INTRO SCREEN
+// ========================================
+
+const intro = document.getElementById("intro");
+
 window.addEventListener("load", () => {
-  const loader = document.getElementById("loader");
-
   setTimeout(() => {
-    loader.classList.add("hide");
-  }, 700);
+    intro.classList.add("done");
+  }, 1300);
 });
 
-// Mobile navigation
-const menuToggle = document.getElementById("menuToggle");
-const navigation = document.getElementById("navigation");
+// ========================================
+// 2. HEADER SCROLL EFFECT
+// ========================================
 
-menuToggle.addEventListener("click", () => {
-  navigation.classList.toggle("active");
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-// Close menu after clicking a link
-document.querySelectorAll(".navigation a").forEach(link => {
+// ========================================
+// 3. MOBILE MENU
+// ========================================
+
+const menuButton = document.getElementById("menuButton");
+const nav = document.getElementById("nav");
+
+menuButton.addEventListener("click", () => {
+  menuButton.classList.toggle("active");
+  nav.classList.toggle("open");
+  document.body.classList.toggle("menu-open");
+});
+
+document.querySelectorAll(".nav a").forEach(link => {
   link.addEventListener("click", () => {
-    navigation.classList.remove("active");
+    menuButton.classList.remove("active");
+    nav.classList.remove("open");
+    document.body.classList.remove("menu-open");
   });
 });
 
-// Reveal elements on scroll
+// ========================================
+// 4. INTERACTIVE SERVICES
+// ========================================
+
+const serviceRows = document.querySelectorAll(".service-row");
+const serviceImage = document.getElementById("serviceImage");
+const serviceCaption = document.getElementById("serviceCaption");
+
+serviceRows.forEach(row => {
+  row.addEventListener("click", () => {
+    serviceRows.forEach(item => item.classList.remove("active"));
+    row.classList.add("active");
+
+    const newImage = row.dataset.image;
+    const newCaption = row.dataset.caption;
+
+    serviceImage.style.opacity = "0";
+
+    setTimeout(() => {
+      serviceImage.src = newImage;
+      serviceCaption.textContent = newCaption;
+      serviceImage.style.opacity = "1";
+    }, 200);
+  });
+});
+
+// ========================================
+// 5. REVEAL ON SCROLL
+// ========================================
+
 const revealElements = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
@@ -38,5 +86,29 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 revealElements.forEach(element => {
-  observer.observe(element);
+  revealObserver.observe(element);
+});
+
+// ========================================
+// 6. CURSOR GLOW
+// ========================================
+
+const cursorGlow = document.getElementById("cursorGlow");
+
+if (window.matchMedia("(pointer: fine)").matches) {
+  window.addEventListener("mousemove", event => {
+    cursorGlow.style.left = `${event.clientX}px`;
+    cursorGlow.style.top = `${event.clientY}px`;
+  });
+}
+
+// ========================================
+// 7. IMAGE LOADING FALLBACK
+// ========================================
+
+document.querySelectorAll("img").forEach(img => {
+  img.addEventListener("error", () => {
+    img.style.opacity = "0";
+    img.parentElement.style.background = "#343c34";
+  });
 });
