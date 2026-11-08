@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#eeeae1">
-  <meta name="description" content="أثر للتطوير والإنشاءات — نصنع ما يبقى.">
-  <title>أثر | ATHAR — نصنع ما يبقى</title>
+  <meta name="theme-color" content="#171b19">
+  <meta name="description" content="ATHAR | أثر — للتطوير والإنشاءات. الأثر لا يُبنى صدفة.">
+  <title>ATHAR — أثر | الأثر لا يُبنى صدفة</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,285 +16,440 @@
 </head>
 <body>
 
-  <div class="loader" id="loader">
-    <span>A.</span>
-    <div class="loader-line"></div>
-    <small>ATHAR / BUILT TO LAST</small>
+  <!-- INTRO -->
+  <div class="intro" id="intro">
+    <div class="intro-logo">A<span>.</span></div>
+    <div class="intro-line"><span></span></div>
+    <p>SHAPING WHAT LASTS</p>
   </div>
 
-  <div class="top-note">
-    <span>نصنع ما يبقى</span>
-    <span class="top-number">ATHAR / 001</span>
-  </div>
+  <div class="page-noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-  <header class="header">
-    <a href="#home" class="logo">
-      <span class="logo-mark">A.</span>
-      <span class="logo-name">أَثَر <small>للتطوير والإنشاءات</small></span>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="#home" class="brand">
+      <span class="brand-symbol">A<span>.</span></span>
+      <span class="brand-copy">
+        <strong>أَثَر</strong>
+        <small>للتطوير والإنشاءات</small>
+      </span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
-      <span></span><span></span>
-    </button>
-
-    <nav class="navigation" id="navigation">
-      <a href="#about">عن أثر</a>
-      <a href="#services">خدماتنا</a>
-      <a href="#projects">مشاريعنا</a>
-      <a href="#process">منهجيتنا</a>
+    <nav class="nav" id="nav">
+      <a href="#about">الفكرة</a>
+      <a href="#services">اختصاصنا</a>
+      <a href="#projects">المشاريع</a>
+      <a href="#approach">منهجيتنا</a>
     </nav>
 
-    <a href="#contact" class="header-contact">
-      لنبدأ مشروعك <span>↙</span>
+    <a href="#contact" class="header-cta">
+      <span>ابدأ مشروعك</span>
+      <span class="cta-arrow">↙</span>
     </a>
+
+    <button class="menu-button" id="menuButton" aria-label="فتح القائمة">
+      <span></span><span></span>
+    </button>
   </header>
 
   <main>
 
+    <!-- HERO -->
     <section class="hero" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow">
-          <span class="eyebrow-line"></span>
-          <span>هندسة الرؤية. صناعة الأثر.</span>
+      <div class="hero-grid"></div>
+
+      <div class="hero-meta">
+        <span>ARCHITECTURE / ENGINEERING / DEVELOPMENT</span>
+        <span>PALESTINE — EST. 2026</span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-heading">
+          <div class="eyebrow">
+            <span class="live-dot"></span>
+            <span>نصمم للمستقبل. ونبني للأجيال.</span>
+          </div>
+
+          <h1>
+            الأثر<br>
+            لا يُبنى<br>
+            <span class="hero-outline">صدفة<span class="hero-period">.</span></span>
+          </h1>
+
+          <div class="hero-bottom">
+            <p>
+              نؤمن أن العمارة ليست مجرد مساحة،
+              بل فكرة تُترجم إلى واقع، وتفاصيل
+              تصنع فرقًا يبقى.
+            </p>
+
+            <a href="#projects" class="discover-link">
+              <span class="discover-circle">↓</span>
+              <span>اكتشف عالم أثر</span>
+            </a>
+          </div>
         </div>
 
-        <h1>
-          نبني<br>
-          <span class="outline-text">بفكرٍ</span> يبقى.
-        </h1>
+        <div class="hero-image-wrap">
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1900&q=90"
+              alt="عمارة معاصرة"
+            >
+            <div class="hero-image-shade"></div>
+          </div>
 
-        <div class="hero-bottom">
-          <p>
-            من الفكرة الأولى إلى أدق تفاصيل التنفيذ،
-            نصنع مساحات تجمع بين الرؤية الهندسية
-            والجودة التي تدوم.
+          <div class="image-coordinates">
+            <span>31°30' N</span>
+            <span>34°27' E</span>
+          </div>
+
+          <div class="hero-side-note">FORM / FUNCTION / FUTURE</div>
+
+          <div class="hero-image-caption">
+            <span>01 — ARCHITECTURAL VISION</span>
+            <span>ATHAR STUDIO</span>
+          </div>
+
+          <div class="hero-seal">
+            <span class="seal-a">A.</span>
+            <span>BUILT<br>WITH<br>INTENTION</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-line"><i></i></span>
+        <span>01 / 04</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="مجالات عمل أثر">
+      <div class="marquee-track">
+        <span>DESIGN</span><i>✳</i>
+        <span>ENGINEERING</span><i>✳</i>
+        <span>CONSTRUCTION</span><i>✳</i>
+        <span>DEVELOPMENT</span><i>✳</i>
+        <span>DESIGN</span><i>✳</i>
+        <span>ENGINEERING</span><i>✳</i>
+        <span>CONSTRUCTION</span><i>✳</i>
+        <span>DEVELOPMENT</span><i>✳</i>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="section-top">
+        <span>01 / THE PHILOSOPHY</span>
+        <span>الفكرة وراء أثر</span>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-title reveal">
+          <span class="mini-label">BEYOND BUILDING</span>
+          <h2>
+            نحن لا نملأ<br>
+            الفراغات،<br>
+            <span>نمنحها معنى.</span>
+          </h2>
+        </div>
+
+        <div class="about-detail reveal">
+          <div class="about-symbol">A<span>.</span></div>
+          <p class="about-lead">
+            كل مشروع يحمل فرصة لصناعة شيء مختلف.
           </p>
-          <a href="#projects" class="round-link">
-            <span>اكتشف أعمالنا</span>
-            <span class="round-arrow">↙</span>
+          <p class="about-description">
+            في أثر، ننظر إلى كل مساحة باعتبارها مسؤولية وفرصة.
+            نجمع بين الرؤية الهندسية، والتخطيط الذكي، والتنفيذ
+            المدروس لنصنع مشاريع متوازنة تجمع بين الجمال
+            والوظيفة والجودة.
+          </p>
+          <a href="#approach" class="line-link">
+            تعرّف على طريقتنا <span>↙</span>
           </a>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=90"
-          alt="تصميم معماري حديث"
-        >
-        <div class="image-overlay"></div>
-
-        <div class="hero-image-label">
-          <span>01 / ARCHITECTURE</span>
-          <span>BUILT TO LAST</span>
+      <div class="about-bottom">
+        <span>OUR PHILOSOPHY</span>
+        <div class="about-statement">
+          <span class="statement-mark">“</span>
+          <p>التفاصيل الصغيرة هي التي تصنع<br>الفرق الكبير.</p>
         </div>
-
-        <div class="vertical-caption">DESIGN · ENGINEERING · DEVELOPMENT</div>
-
-        <div class="hero-stamp">
-          <span>A</span>
-          <small>BUILT TO<br>LAST</small>
-        </div>
-      </div>
-
-      <div class="hero-index">01 — 04</div>
-    </section>
-
-    <section class="statement section-padding" id="about">
-      <div class="section-kicker">
-        <span>01 / من نحن</span>
-        <span class="kicker-line"></span>
-      </div>
-
-      <div class="statement-content">
-        <h2>
-          نحن لا نبني<br>
-          <span>مجرد مبانٍ.</span>
-          <br>نصنع قيمة
-          <span class="serif-word">تدوم.</span>
-        </h2>
-
-        <div class="statement-description">
-          <span class="small-symbol">✳</span>
-          <p>
-            في أثر، نؤمن أن كل مشروع يبدأ بفكرة تستحق أن تتحول إلى واقع.
-            لذلك نجمع بين التخطيط المدروس، والرؤية الهندسية،
-            والتنفيذ المتقن لنقدم حلولًا عمرانية تليق بتطلعات عملائنا.
-          </p>
-          <a href="#services" class="text-link">اكتشف فلسفتنا <span>↙</span></a>
-        </div>
-      </div>
-
-      <div class="stats">
-        <div class="stat">
-          <strong>01<span>—</span></strong>
-          <span>رؤية واضحة لكل مشروع</span>
-        </div>
-        <div class="stat">
-          <strong>360°</strong>
-          <span>نظرة متكاملة للتنفيذ</span>
-        </div>
-        <div class="stat">
-          <strong>∞</strong>
-          <span>قيمة تتجاوز الزمن</span>
-        </div>
+        <span>ATHAR / 001</span>
       </div>
     </section>
 
-    <section class="services section-padding" id="services">
-      <div class="section-heading">
-        <div>
-          <span class="section-label">02 / ماذا نقدم</span>
-          <h2>خبرتنا تصنع<br><span>الفرق.</span></h2>
-        </div>
-        <p>حلول متكاملة تبدأ بالتخطيط<br>ولا تنتهي عند التسليم.</p>
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <div class="section-top">
+        <span>02 / WHAT WE DO</span>
+        <span>مجالات اختصاصنا</span>
       </div>
 
-      <div class="service-list">
-        <article class="service-item">
-          <span class="service-number">01</span>
-          <div class="service-title">
-            <h3>المقاولات العامة</h3>
-            <p>تنفيذ متكامل بمعايير دقيقة وجودة عالية.</p>
-          </div>
-          <span class="service-icon">↙</span>
-        </article>
+      <div class="services-intro">
+        <h2>فكرة متكاملة.<br><span>تنفيذ متقن.</span></h2>
+        <p>
+          من أول تصور إلى آخر تفصيل، نربط مراحل المشروع
+          ضمن رؤية واحدة واضحة.
+        </p>
+      </div>
 
-        <article class="service-item">
-          <span class="service-number">02</span>
-          <div class="service-title">
-            <h3>التصميم والتخطيط</h3>
-            <p>تحويل الأفكار إلى تصورات هندسية مدروسة.</p>
+      <div class="services-layout">
+        <div class="services-visual">
+          <img
+            id="serviceImage"
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85"
+            alt="مجال عمل أثر"
+          >
+          <div class="visual-caption">
+            <span id="serviceCaption">01 / BUILDING THE VISION</span>
+            <span>ATHAR — SERVICES</span>
           </div>
-          <span class="service-icon">↙</span>
-        </article>
+        </div>
 
-        <article class="service-item">
-          <span class="service-number">03</span>
-          <div class="service-title">
-            <h3>إدارة المشاريع</h3>
-            <p>تنسيق الموارد والمراحل لضمان سير العمل بكفاءة.</p>
-          </div>
-          <span class="service-icon">↙</span>
-        </article>
+        <div class="service-list">
+          <button class="service-row active"
+            data-image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85"
+            data-caption="01 / BUILDING THE VISION">
+            <span class="service-index">01</span>
+            <span class="service-name">
+              <strong>المقاولات والإنشاءات</strong>
+              <small>من الأساس إلى اكتمال الصورة.</small>
+            </span>
+            <span class="service-arrow">↙</span>
+          </button>
 
-        <article class="service-item">
-          <span class="service-number">04</span>
-          <div class="service-title">
-            <h3>التشطيبات والتطوير</h3>
-            <p>تفاصيل مدروسة ترتقي بالتجربة النهائية للمكان.</p>
-          </div>
-          <span class="service-icon">↙</span>
-        </article>
+          <button class="service-row"
+            data-image="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85"
+            data-caption="02 / DESIGNING THE POSSIBLE">
+            <span class="service-index">02</span>
+            <span class="service-name">
+              <strong>التصميم والتخطيط الهندسي</strong>
+              <small>أفكار تتحول إلى حلول مدروسة.</small>
+            </span>
+            <span class="service-arrow">↙</span>
+          </button>
+
+          <button class="service-row"
+            data-image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85"
+            data-caption="03 / MANAGING EVERY DETAIL">
+            <span class="service-index">03</span>
+            <span class="service-name">
+              <strong>إدارة المشاريع</strong>
+              <small>تنسيق دقيق لكل مرحلة وقرار.</small>
+            </span>
+            <span class="service-arrow">↙</span>
+          </button>
+
+          <button class="service-row"
+            data-image="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85"
+            data-caption="04 / FINISHING WITH PURPOSE">
+            <span class="service-index">04</span>
+            <span class="service-name">
+              <strong>التشطيبات والتطوير</strong>
+              <small>جودة تظهر في كل تفصيل.</small>
+            </span>
+            <span class="service-arrow">↙</span>
+          </button>
+        </div>
       </div>
     </section>
 
-    <section class="projects section-padding" id="projects">
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="section-top">
+        <span>03 / SELECTED WORK</span>
+        <span>المشاريع</span>
+      </div>
+
       <div class="projects-heading">
-        <div>
-          <span class="section-label">03 / مختارات من أعمالنا</span>
-          <h2>المشاريع تتحدث<br><span>عنّا.</span></h2>
-        </div>
-        <span class="project-count">SELECTED WORKS / 2026</span>
+        <h2>الأفكار تأخذ<br><span>شكلًا.</span></h2>
+        <p>كل مساحة تبدأ برؤية،<br>وكل تفصيل يحكي قصة.</p>
       </div>
 
-      <div class="project-grid">
-        <article class="project-card project-large reveal">
-          <a href="#contact" class="project-image">
-            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="فيلا معاصرة">
-            <span class="project-open">↗</span>
-          </a>
-          <div class="project-info">
-            <div>
-              <span>RESIDENTIAL / 001</span>
-              <h3>مسكن الوادي</h3>
-            </div>
-            <span>سكني — تصميم وتنفيذ</span>
+      <div class="project-feature reveal">
+        <div class="project-image project-image-main">
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1900&q=90"
+            alt="مشروع سكني معاصر"
+          >
+          <span class="project-number">PROJECT / 001</span>
+          <span class="project-open">↗</span>
+          <div class="project-image-title">
+            <span>RESIDENTIAL CONCEPT</span>
+            <h3>مسكن الوادي</h3>
           </div>
-        </article>
+        </div>
+        <div class="project-description">
+          <span class="project-type">01 — RESIDENTIAL</span>
+          <p>مساحة سكنية تتوازن فيها الخطوط المعمارية مع الضوء والطبيعة.</p>
+          <span class="project-status">CONCEPT / DEMO PROJECT</span>
+        </div>
+      </div>
 
-        <article class="project-card project-small reveal">
-          <a href="#contact" class="project-image">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85" alt="مبنى إداري">
+      <div class="project-duo">
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1300&q=85"
+              alt="مبنى تجاري"
+            >
+            <span class="project-number">PROJECT / 002</span>
             <span class="project-open">↗</span>
-          </a>
-          <div class="project-info">
+          </div>
+          <div class="project-card-info">
             <div>
-              <span>COMMERCIAL / 002</span>
+              <span>COMMERCIAL</span>
               <h3>مركز الأعمال</h3>
             </div>
-            <span>تجاري — تطوير</span>
+            <span>02 / 03</span>
           </div>
         </article>
 
-        <article class="project-card project-small reveal">
-          <a href="#contact" class="project-image">
-            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85" alt="تصميم داخلي">
+        <article class="project-card project-offset reveal">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1300&q=85"
+              alt="مساحة داخلية"
+            >
+            <span class="project-number">PROJECT / 003</span>
             <span class="project-open">↗</span>
-          </a>
-          <div class="project-info">
+          </div>
+          <div class="project-card-info">
             <div>
-              <span>INTERIOR / 003</span>
+              <span>INTERIOR</span>
               <h3>مساحات هادئة</h3>
             </div>
-            <span>داخلي — تشطيبات</span>
+            <span>03 / 03</span>
           </div>
         </article>
       </div>
 
-      <p class="demo-note">* المشاريع المعروضة نماذج بصرية تجريبية وليست أعمالًا موثقة للشركة.</p>
+      <p class="demo-note">
+        * الصور والمشاريع المعروضة لأغراض العرض التجريبي، وليست أعمالًا موثقة للشركة.
+      </p>
     </section>
 
-    <section class="process section-padding" id="process">
-      <div class="process-intro">
-        <span class="section-label">04 / كيف نعمل</span>
-        <h2>من أول فكرة<br>إلى <span>آخر تفصيل.</span></h2>
-        <p>منهجية واضحة تجعل كل خطوة مدروسة وكل قرار في مكانه.</p>
+    <!-- BLUEPRINT -->
+    <section class="blueprint section">
+      <div class="blueprint-grid"></div>
+      <div class="blueprint-top">
+        <span>DESIGN IS A PROCESS</span>
+        <span>ATHAR / ENGINEERING</span>
       </div>
 
-      <div class="process-steps">
-        <div class="process-step">
-          <span>01</span>
-          <div><h3>نستمع</h3><p>نفهم احتياجاتك ورؤيتك وأهداف مشروعك.</p></div>
-          <span class="step-symbol">↙</span>
+      <div class="blueprint-content">
+        <div class="blueprint-copy">
+          <span class="mini-label">FROM CONCEPT TO REALITY</span>
+          <h2>كل تفصيل<br>له <span>سبب.</span></h2>
+          <p>
+            خلف كل نتيجة متقنة تخطيط، وحسابات،
+            وقرارات هندسية تصنع الفارق.
+          </p>
         </div>
-        <div class="process-step">
-          <span>02</span>
-          <div><h3>نخطط</h3><p>نضع التصور الهندسي وخطة التنفيذ.</p></div>
-          <span class="step-symbol">↙</span>
-        </div>
-        <div class="process-step">
-          <span>03</span>
-          <div><h3>ننّفذ</h3><p>نحوّل المخططات إلى واقع باهتمام بالتفاصيل.</p></div>
-          <span class="step-symbol">↙</span>
-        </div>
-        <div class="process-step">
-          <span>04</span>
-          <div><h3>نسلّم</h3><p>نراجع التفاصيل ونصل إلى النتيجة المتفق عليها.</p></div>
-          <span class="step-symbol">↙</span>
+
+        <div class="blueprint-art">
+          <div class="blueprint-frame">
+            <div class="blueprint-square square-one"></div>
+            <div class="blueprint-square square-two"></div>
+            <div class="blueprint-circle"></div>
+            <div class="blueprint-diagonal"></div>
+            <span class="dimension dim-top">12.40 M</span>
+            <span class="dimension dim-side">08.60 M</span>
+            <span class="dimension dim-bottom">PLAN / A-001</span>
+            <span class="blueprint-cross cross-one">+</span>
+            <span class="blueprint-cross cross-two">+</span>
+          </div>
+          <span class="blueprint-caption">ARCHITECTURAL STUDY — VISUAL CONCEPT</span>
         </div>
       </div>
     </section>
 
+    <!-- APPROACH -->
+    <section class="approach section" id="approach">
+      <div class="section-top">
+        <span>04 / OUR APPROACH</span>
+        <span>منهجية العمل</span>
+      </div>
+
+      <div class="approach-heading">
+        <h2>من الرؤية<br>إلى <span>الأثر.</span></h2>
+        <p>أربع مراحل. رؤية واحدة.<br>نتيجة تستحق أن تبقى.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-number">01</span>
+          <div class="timeline-content">
+            <span>DISCOVER</span>
+            <h3>نستكشف.</h3>
+            <p>نفهم الفكرة والاحتياجات والتحديات قبل أن نبدأ.</p>
+          </div>
+          <span class="timeline-mark">✳</span>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-number">02</span>
+          <div class="timeline-content">
+            <span>DESIGN</span>
+            <h3>نخطط.</h3>
+            <p>نصوغ تصورًا واضحًا وخطة هندسية مدروسة.</p>
+          </div>
+          <span class="timeline-mark">✳</span>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-number">03</span>
+          <div class="timeline-content">
+            <span>BUILD</span>
+            <h3>ننفذ.</h3>
+            <p>نحوّل المخططات إلى واقع مع الاهتمام بالتفاصيل.</p>
+          </div>
+          <span class="timeline-mark">✳</span>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-number">04</span>
+          <div class="timeline-content">
+            <span>DELIVER</span>
+            <h3>نُنجز.</h3>
+            <p>نراجع العمل ونسلّم نتيجة تعكس الرؤية المتفق عليها.</p>
+          </div>
+          <span class="timeline-mark">✳</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section class="contact" id="contact">
-      <div class="contact-top">
-        <span>LET'S BUILD SOMETHING MEANINGFUL</span>
-        <span>ATHAR / 2026</span>
-      </div>
+      <div class="contact-orbit orbit-one"></div>
+      <div class="contact-orbit orbit-two"></div>
 
-      <h2>لديك رؤية؟<br><span>لنصنع أثرها.</span></h2>
+      <div class="contact-content">
+        <span class="mini-label">YOUR VISION STARTS HERE</span>
+        <h2>لديك فكرة؟<br><span>لنصنع أثرها.</span></h2>
+        <p>المشاريع العظيمة تبدأ بخطوة.<br>دعنا نتحدث عن مشروعك القادم.</p>
+        <a href="mailto:hello@example.com" class="contact-button">
+          <span>تواصل مع فريق أثر</span>
+          <span>↙</span>
+        </a>
+      </div>
 
       <div class="contact-bottom">
-        <p>كل مشروع عظيم يبدأ بمحادثة.<br>أخبرنا عن فكرتك ودعنا نبدأ.</p>
-        <a href="mailto:hello@example.com" class="contact-button">
-          تواصل معنا <span>↙</span>
-        </a>
+        <span>ATHAR — BUILT WITH INTENTION</span>
+        <span>PALESTINE</span>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <a href="#home" class="footer-logo">A.</a>
+    <a href="#home" class="footer-brand">A<span>.</span></a>
     <span>© 2026 ATHAR. جميع الحقوق محفوظة.</span>
     <a href="#home">العودة للأعلى ↑</a>
   </footer>
